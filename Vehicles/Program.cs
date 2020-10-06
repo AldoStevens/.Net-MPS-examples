@@ -1,41 +1,27 @@
 ﻿using System;
 
-namespace Vehicles
+namespace Humans
 {
     class Program
     {
         static void Main(string[] args)
         {
-               Car honda = new Car(2003,"Jazz",0);
-            Car vw = new Car(2020,"Polo",10);
-            vw.DriveFaster(45);
-            vw.Make = "Golf";
-           // Console.WriteLine("CAR 1: " + vw.Speed);
-            Console.WriteLine("CAR 1: " + vw.Make);
+            Person john = new Person("Black", 44, "Blue", "Male");
+            Person jane = new Person("Blond", 21, "Brown", "Female" );
+            jane.birthDay(45);
+            john.HairColor = "Pink";
 
-            Car bmw = new Car(2019,"M3",0);
-            bmw.DriveFaster(160);
-            bmw.DriveSlower(70);
+            Person aldo = new Person("Black",23, "Brown", "Male");
+            aldo.birthDay(24);
+            
 
-           // Console.WriteLine("CAR 2: " + bmw.Speed);
-            Console.WriteLine("CAR 2: " + bmw.Make);
+            Person melissa = new Person("Black",21, "Brown", "Female");
+            melissa.birthDay(24);
+            
 
-            Car rollsRoyce = new Car(2019,"Phantom",0);
-            rollsRoyce.DriveFaster(23);
-
-            Car mazda = new Car(1989,"323",0);
-            mazda.DriveFaster(2);
-
-            Car toyota = new Car(1973,"Cresida",0);
-            toyota.DriveFaster(180);
-
-         
-            honda.DriveFaster(1);
-
-              Console.WriteLine("CAR 3: " + rollsRoyce.Make);
-              Console.WriteLine("CAR 4: " + mazda.Make);
-              Console.WriteLine("CAR 5: " + toyota.Make);
-              Console.WriteLine("CAR 6: " + honda.Make);
+            Console.WriteLine("PERSON 1 has " + john.HairColor + " hair and is " + john.Age + " years old");
+            Console.WriteLine("PERSON 2 has " + aldo.HairColor + " hair and is " + aldo.Age + " years old");
+            Console.WriteLine("PERSON 3 has " + melissa.HairColor + " hair and is " + melissa.Age + " years old");
 
         }
     }
